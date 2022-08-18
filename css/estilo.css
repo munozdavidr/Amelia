@@ -29,7 +29,7 @@ header {
 
 footer {
   border: 1px solid black;
-  background-color: #faf9f9;
+  background: linear-gradient(to bottom, #ffffff,#faf9f9);
   margin: 0;
   margin-top: 20%;
   padding: 10px;
@@ -233,6 +233,19 @@ input {
   background-image: url("../img/cowspiracy-el-documental-la-contaminacion-que-ejerce-la-ganaderia.webp");
   background-repeat: no-repeat;
   position: center;
+}
+
+.liTransicion {
+  display: inline-block;
+background-color: #ffffff;
+transition: height 0.1s, width 0.1s;
+}
+
+.liTransicion:hover {
+  background-color: #faf9f9;
+  text-transform: uppercase;
+  height: 40px;
+  width: 150px;
 }
 
 /* MEDIA QUERY */
