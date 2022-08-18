@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FUENTES DE GOOGLE */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* font-family: 'Lato', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* font-family: 'Lato', sans-serif; */
+
+body {
+  display: grid;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  background-color: white;
+}
+
+header {
+  background-color: none;
+  position: sticky;
+  top: 0;
+  grid-area: header;
+}
+
+footer {
+  border: 1px solid black;
+  background-color: #faf9f9;
+  margin: 0;
+  margin-top: 20%;
+  padding: 10px;
+  grid-area: footer;
+}
+
+main {
+  grid-area: main;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: nav;
+}
+
+/* DAR ESTILOS CON CLASS, NO ID, ES MAS RECOMENDABLE */
+
+/* h */
+h1 {
+  color: #56f616;
+  font-size: 60px;
+}
+
+h2 {
+  margin: 10px;
+  color: #21eb64;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+/* <a> */
+a {
+  text-decoration: none;
+}
+
+/* <li> */
+
+li {
+  list-style-type: none;
+  margin: 0 0 5px 0;
+  display: inline;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tamaño de Iconos FOOTER */
+.iconosRs {
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+}
+
+/* Edicion de div footer*/
+
+.divEdit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divEditDos {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+p {
+  margin: 10px;
+}
+
+a {
+  margin: 10px;
+}
+
+.imgClass {
+  margin: 20px;
+  width: 350px;
+  height: auto;
+}
+
+.header1 {
+  background-image: url("../img/leavepng.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+main h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.FormStyle {
+  display: inline-block;
+  margin: 10px 10px 10px 550px;
+  padding: 50px;
+  border: 1px black solid;
+  font-style: italic;
+}
+
+.formButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+input {
+  margin: 3px;
+  padding: 3px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+/* Etique para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
+
+.imageSize {
+  width: 450px;
+  height: auto;
+}
+
+img {
+  border-radius: 4px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: section;
+}
+
+input {
+  border-radius: 5px;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.imgSponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemA {
+  grid-area: itemA;
+}
+
+.itemB {
+  grid-area: itemB;
+}
+
+.itemC {
+  grid-area: itemC;
+}
+
+.gridHijo {
+  display: grid;
+  grid-template-areas: "itemA itemB itemC";
+}
+
+.gridPadre {
+  display: grid;
+  grid-template-areas:
+    "header nav"
+    "section section"
+    "main main"
+    "footer footer";
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background-image: url("../img/cowspiracy-el-documental-la-contaminacion-que-ejerce-la-ganaderia.webp");
+  background-repeat: no-repeat;
+  position: center;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "section"
+      "main"
+      "footer";
+  }
+  .gridHijo {
+    display: grid;
+    grid-template-areas:
+      "itemA"
+      "itemB"
+      "itemC";
+  }
+}
