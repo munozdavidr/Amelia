@@ -235,6 +235,19 @@ input {
   position: center;
 }
 
+.liTransicion {
+  display: inline-block;
+background-color: #ffffff;
+transition: all 0.2s;
+}
+
+.liTransicion:hover {
+  background-color: #faf9f9;
+  text-transform: uppercase;
+  height: 40px;
+  width: 150px;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 768px) {
