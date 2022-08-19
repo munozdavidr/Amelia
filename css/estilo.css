@@ -238,7 +238,7 @@ input {
 .liTransicion {
   display: inline-block;
 background-color: #ffffff;
-transition: height 0.1s, width 0.1s;
+transition: all 0.2s;
 }
 
 .liTransicion:hover {
