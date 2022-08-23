@@ -224,7 +224,7 @@ input {
     "footer footer";
 }
 
-.section1 {
+/* .section1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +233,13 @@ input {
   background-image: url("../img/cowspiracy-el-documental-la-contaminacion-que-ejerce-la-ganaderia.webp");
   background-repeat: no-repeat;
   position: center;
+} */
+
+.cow {
+  width: 100%;
+  height: auto;
 }
+
 
 .liTransicion {
   display: inline-block;
