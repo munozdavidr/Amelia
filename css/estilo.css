@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+/* Tenemos codigo comentado porque estoy indeciso de si voy a trabajar con bootstrap o grid */
+
 /* FUENTES DE GOOGLE */
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
@@ -139,31 +141,24 @@ main h2 {
   margin: 10px;
 }
 
-.FormStyle {
-  display: inline-block;
-  margin: 10px 10px 10px 550px;
-  padding: 50px;
-  border: 1px black solid;
-  font-style: italic;
+.formStyle {
+  width: 50rem;
+  height: auto;
 }
 
-.formButtons {
+/* .formButtons {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
-}
+} */
 
-input {
-  margin: 3px;
-  padding: 3px;
-}
 
-label {
+/* label {
   display: flex;
   align-items: center;
   justify-content: right;
-}
+} */
 
 /* Etique para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
 
@@ -184,12 +179,12 @@ section {
   grid-area: section;
 }
 
-input {
+/* input {
   border-radius: 5px;
   background-color: black;
   color: #ffffff;
   cursor: pointer;
-}
+} */
 
 .imgSponsors {
   display: flex;
@@ -198,7 +193,8 @@ input {
   justify-content: center;
 }
 
-.itemA {
+/* Se comenta porque aplicamos grid con bootstrap */
+/* .itemA {
   grid-area: itemA;
 }
 
@@ -213,7 +209,7 @@ input {
 .gridHijo {
   display: grid;
   grid-template-areas: "itemA itemB itemC";
-}
+} */
 
 .gridPadre {
   display: grid;
@@ -224,6 +220,7 @@ input {
     "footer footer";
 }
 
+/* se comento porque aplicamos la imagen directo al html con bootstrap */
 /* .section1 {
   display: flex;
   justify-content: center;
@@ -266,11 +263,12 @@ transition: all 0.2s;
       "main"
       "footer";
   }
-  .gridHijo {
+  /* Se comenta porque probamos el grid con bootstrap */
+  /* .gridHijo {
     display: grid;
     grid-template-areas:
       "itemA"
       "itemB"
       "itemC";
-  }
+  } */  
 }
