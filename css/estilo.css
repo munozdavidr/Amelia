@@ -13,6 +13,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 /* font-family: 'Lato', sans-serif; */
 
+/* @import 'animate.css'; */
+
 body {
   display: grid;
   font-family: "Lato", sans-serif;
@@ -23,15 +25,17 @@ html {
 }
 
 header {
-  background-color: none;
+  /* background-color: white; */
   position: sticky;
   top: 0;
   grid-area: header;
 }
 
 footer {
-  /* border: 1px solid black; */
-  background: linear-gradient(to bottom, #ffffff, #f1f1f1, #d4d4d4);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f8e9e9;
   margin: 0;
   margin-top: 20%;
   padding: 20px;
@@ -83,29 +87,22 @@ li {
 
 footer ul {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 }
 
 /* Tamaño de Iconos FOOTER */
 .iconosRs {
-  height: 20px;
-  width: 20px;
+  height: 120px;
+  width: 120px;
   margin: 2px;
+  animation-duration: 3s;
 }
 
 /* Edicion de div footer*/
 
 .divEdit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.divEditDos {
-  display: flex;
-  align-items: center;
-  justify-content: end;
+  text-align: center;
 }
 
 p {
@@ -120,12 +117,6 @@ a {
   margin: 20px;
   width: 350px;
   height: auto;
-}
-
-.header1 {
-  background-image: url("../img/leavepng.png");
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 main h2 {
@@ -146,20 +137,6 @@ main h2 {
   height: auto;
 }
 
-/* .formButtons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-} */
-
-
-/* label {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-} */
-
 /* Etique para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
 
 .imageSize {
@@ -179,13 +156,6 @@ section {
   grid-area: section;
 }
 
-/* input {
-  border-radius: 5px;
-  background-color: black;
-  color: #ffffff;
-  cursor: pointer;
-} */
-
 .imgSponsors {
   display: flex;
   flex-direction: column;
@@ -193,62 +163,25 @@ section {
   justify-content: center;
 }
 
-/* Se comenta porque aplicamos grid con bootstrap */
-/* .itemA {
-  grid-area: itemA;
-}
-
-.itemB {
-  grid-area: itemB;
-}
-
-.itemC {
-  grid-area: itemC;
-}
-
-.gridHijo {
-  display: grid;
-  grid-template-areas: "itemA itemB itemC";
-} */
-
 .gridPadre {
   display: grid;
   grid-template-areas:
-    "header nav"
+    "header header"
+    "nav nav"
     "section section"
     "main main"
     "footer footer";
 }
-
-/* se comento porque aplicamos la imagen directo al html con bootstrap */
-/* .section1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100%;
-  background-image: url("../img/cowspiracy-el-documental-la-contaminacion-que-ejerce-la-ganaderia.webp");
-  background-repeat: no-repeat;
-  position: center;
-} */
 
 .cow {
   width: 100%;
   height: auto;
 }
 
-
 .liTransicion {
   display: inline-block;
-background-color: #ffffff;
-transition: all 0.2s;
-}
-
-.liTransicion:hover {
-  background-color: #faf9f9;
+  background-color: #ffffff;
   text-transform: uppercase;
-  height: 40px;
-  width: 150px;
 }
 
 /* MEDIA QUERY */
@@ -263,12 +196,4 @@ transition: all 0.2s;
       "main"
       "footer";
   }
-  /* Se comenta porque probamos el grid con bootstrap */
-  /* .gridHijo {
-    display: grid;
-    grid-template-areas:
-      "itemA"
-      "itemB"
-      "itemC";
-  } */  
 }
