@@ -1,35 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 * {
   margin: 0;
-  padding: 0;
-}
-
-/* Tenemos codigo comentado porque estoy indeciso de si voy a trabajar con bootstrap o grid */
-
-/* FUENTES DE GOOGLE */
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-/* font-family: 'Lato', sans-serif; */
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-/* font-family: 'Lato', sans-serif; */
-
-/* @import 'animate.css'; */
+  padding: 0; }
 
 body {
   display: grid;
   font-family: "Lato", sans-serif;
-}
-
-html {
-  background-color: white;
-}
+  background-color: white; }
 
 header {
-  /* background-color: white; */
   position: sticky;
   top: 0;
-  grid-area: header;
-}
+  grid-area: header; }
+  header h1 {
+    color: #56f616;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 10px; }
 
 footer {
   display: flex;
@@ -39,161 +28,84 @@ footer {
   margin: 0;
   margin-top: 20%;
   padding: 20px;
-  grid-area: footer;
-}
+  grid-area: footer; }
+  footer .divEdit {
+    text-align: center; }
+  footer .iconosRs {
+    height: 120px;
+    width: 120px;
+    margin: 2px;
+    animation-duration: 3s; }
 
 main {
-  grid-area: main;
-}
+  grid-area: main; }
+  main h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  main .cow {
+    width: 100%;
+    height: auto; }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-area: nav;
-}
-
-/* DAR ESTILOS CON CLASS, NO ID, ES MAS RECOMENDABLE */
+  grid-area: nav; }
+  nav a {
+    text-decoration: none; }
 
 /* h */
-h1 {
-  color: #56f616;
-  font-size: 60px;
-}
-
 h2 {
   margin: 10px;
-  color: #21eb64;
-}
-
-header h1 {
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-}
-
-/* <a> */
-a {
-  text-decoration: none;
-}
+  color: #21eb64; }
 
 /* <li> */
-
 li {
   list-style-type: none;
   margin: 0 0 5px 0;
-  display: inline;
-}
-
-footer ul {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-}
-
-/* Tamaño de Iconos FOOTER */
-.iconosRs {
-  height: 120px;
-  width: 120px;
-  margin: 2px;
-  animation-duration: 3s;
-}
-
-/* Edicion de div footer*/
-
-.divEdit {
-  text-align: center;
-}
+  display: inline; }
 
 p {
-  margin: 10px;
-}
+  margin: 10px; }
 
 a {
-  margin: 10px;
-}
+  margin: 10px; }
 
 .imgClass {
   margin: 20px;
   width: 350px;
-  height: auto;
-}
-
-main h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-}
+  height: auto; }
 
 .formStyle {
   width: 50rem;
-  height: auto;
-}
+  height: auto; }
 
-/* Etique para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
-
+/* Etiquetas para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
 .imageSize {
   width: 450px;
-  height: auto;
-}
+  height: auto; }
 
 img {
-  border-radius: 4px;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  grid-area: section;
-}
+  border-radius: 4px; }
 
 .imgSponsors {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .gridPadre {
   display: grid;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "section section"
-    "main main"
-    "footer footer";
-}
-
-.cow {
-  width: 100%;
-  height: auto;
-}
+  grid-template-areas: "header header" "nav nav" "section section" "main main" "footer footer"; }
 
 .liTransicion {
   display: inline-block;
   background-color: #ffffff;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 /* MEDIA QUERY */
-
 @media (max-width: 768px) {
   .gridPadre {
     display: grid;
-    grid-template-areas:
-      "header"
-      "nav"
-      "section"
-      "main"
-      "footer";
-  }
-}
+    grid-template-areas: "header" "nav" "main" "footer"; } }
