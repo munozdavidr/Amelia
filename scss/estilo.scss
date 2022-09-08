@@ -12,6 +12,10 @@
   
   @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
   // font-family: 'Lato', sans-serif;
+
+  @import "footer";
+
+  @import "header";
   
   body {
     display: grid;
@@ -19,10 +23,7 @@
     background-color: white;
     }
   
-  header {
-    position: sticky;
-    top: 0;
-    grid-area: header;
+  
 
     h1 {
         color: #56f616;
@@ -31,35 +32,19 @@
         margin: 0;
         padding: 10px;
       }
-  }
   
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #f8e9e9;
-    margin: 0;
-    margin-top: 20%;
-    padding: 20px;
-    grid-area: footer;
 
     .divEdit {
         text-align: center;
       }
 
-    .iconosRs {
-        height: 120px;
-        width: 120px;
-        margin: 2px;
-        animation-duration: 3s;
-      }
+    
     
     // ul {
     //     display: flex;
     //     align-items: right;
     //     justify-content: right;
     //   }
-  }
   
   main {
     grid-area: main;

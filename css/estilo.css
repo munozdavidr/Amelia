@@ -4,22 +4,6 @@
   margin: 0;
   padding: 0; }
 
-body {
-  display: grid;
-  font-family: "Lato", sans-serif;
-  background-color: white; }
-
-header {
-  position: sticky;
-  top: 0;
-  grid-area: header; }
-  header h1 {
-    color: #56f616;
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    padding: 10px; }
-
 footer {
   display: flex;
   flex-direction: row;
@@ -29,13 +13,31 @@ footer {
   margin-top: 20%;
   padding: 20px;
   grid-area: footer; }
-  footer .divEdit {
-    text-align: center; }
   footer .iconosRs {
     height: 120px;
     width: 120px;
     margin: 2px;
     animation-duration: 3s; }
+
+header {
+  position: sticky;
+  top: 0;
+  grid-area: header; }
+
+body {
+  display: grid;
+  font-family: "Lato", sans-serif;
+  background-color: white; }
+
+h1 {
+  color: #56f616;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 10px; }
+
+.divEdit {
+  text-align: center; }
 
 main {
   grid-area: main; }

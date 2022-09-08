@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f8e9e9;
+    margin: 0;
+    margin-top: 20%;
+    padding: 20px;
+    grid-area: footer;
+
+
+    .iconosRs {
+        height: 120px;
+        width: 120px;
+        margin: 2px;
+        animation-duration: 3s;
+    }
+}
