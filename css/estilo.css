@@ -12,10 +12,12 @@ header {
 body {
   display: grid;
   font-family: "Lato", sans-serif;
-  background-color: white; }
+  background-color: white;
+  font-size: 1rem; }
 
 h1 {
   color: #56f616;
+  font-size: 3rem;
   text-align: center;
   margin: 0;
   padding: 10px; }
@@ -113,9 +115,3 @@ footer {
 
 h2 {
   color: #21eb64; }
-
-body {
-  font-size: 1rem; }
-
-h1 {
-  font-size: 1rem; }
