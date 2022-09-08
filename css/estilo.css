@@ -4,21 +4,6 @@
   margin: 0;
   padding: 0; }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #f8e9e9;
-  margin: 0;
-  margin-top: 20%;
-  padding: 20px;
-  grid-area: footer; }
-  footer .iconosRs {
-    height: 120px;
-    width: 120px;
-    margin: 2px;
-    animation-duration: 3s; }
-
 header {
   position: sticky;
   top: 0;
@@ -31,7 +16,6 @@ body {
 
 h1 {
   color: #56f616;
-  font-size: 60px;
   text-align: center;
   margin: 0;
   padding: 10px; }
@@ -44,7 +28,8 @@ main {
   main h2 {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin: 10px; }
   main .cow {
     width: 100%;
     height: auto; }
@@ -54,13 +39,6 @@ nav {
   align-items: center;
   justify-content: center;
   grid-area: nav; }
-  nav a {
-    text-decoration: none; }
-
-/* h */
-h2 {
-  margin: 10px;
-  color: #21eb64; }
 
 /* <li> */
 li {
@@ -72,6 +50,7 @@ p {
   margin: 10px; }
 
 a {
+  text-decoration: none;
   margin: 10px; }
 
 .imgClass {
@@ -103,11 +82,40 @@ img {
 
 .liTransicion {
   display: inline-block;
-  background-color: #ffffff;
   text-transform: uppercase; }
+
+.card-body {
+  background-color: black; }
 
 /* MEDIA QUERY */
 @media (max-width: 768px) {
   .gridPadre {
     display: grid;
     grid-template-areas: "header" "nav" "main" "footer"; } }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f8e9e9;
+  margin: 0;
+  margin-top: 20%;
+  padding: 20px;
+  grid-area: footer; }
+  footer .iconosRs {
+    height: 120px;
+    width: 120px;
+    margin: 2px;
+    animation-duration: 3s; }
+
+.btn-primary {
+  background-color: #21eb64; }
+
+h2 {
+  color: #21eb64; }
+
+body {
+  font-size: 1rem; }
+
+h1 {
+  font-size: 1rem; }

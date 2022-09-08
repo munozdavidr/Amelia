@@ -1,162 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  // DAR ESTILOS CON CLASS, NO ID, ES MAS RECOMENDABLE
-  
-  // FUENTES DE GOOGLE
-  
-  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-  // font-family: 'Lato', sans-serif;
-  
-  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-  // font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  @import "footer";
+// DAR ESTILOS CON CLASS, NO ID, ES MAS RECOMENDABLE
 
-  @import "header";
-  
-  body {
-    display: grid;
-    font-family: "Lato", sans-serif;
-    background-color: white;
-    }
-  
-  
+// FUENTES DE GOOGLE
 
-    h1 {
-        color: #56f616;
-        font-size: 60px;
-        text-align: center;
-        margin: 0;
-        padding: 10px;
-      }
-  
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+// font-family: 'Lato', sans-serif;
 
-    .divEdit {
-        text-align: center;
-      }
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+// font-family: 'Lato', sans-serif;
 
-    
-    
-    // ul {
-    //     display: flex;
-    //     align-items: right;
-    //     justify-content: right;
-    //   }
-  
-  main {
-    grid-area: main;
+@import "variables";
+@import "header";
+@import "general";
+@import "footer";
+@import "maps"
 
-    h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
 
-    .cow {
-        width: 100%;
-        height: auto;
-      }
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: nav;
-
-    a {
-        text-decoration: none;
-      }
-  }
-  
-  /* h */
-  
-  h2 {
-    margin: 10px;
-    color: #21eb64;
-  }
-  
-  /* <li> */
-  
-  li {
-    list-style-type: none;
-    margin: 0 0 5px 0;
-    display: inline;
-  }
-  
-p {
-    margin: 10px;
-  }
-  
-  a {
-    margin: 10px;
-  }
-    
-  .imgClass {
-    margin: 20px;
-    width: 350px;
-    height: auto;
-  } 
-  
-  .formStyle {
-    width: 50rem;
-    height: auto;
-  }
-  
-  /* Etiquetas para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
-  
-  .imageSize {
-    width: 450px;
-    height: auto;
-  }
-  
-  img {
-    border-radius: 4px;
-  }
-  
-//   section {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     grid-area: section;
-//   }
-  
-  .imgSponsors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .gridPadre {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "nav nav"
-      "section section"
-      "main main"
-      "footer footer";
-  }
-  
-  .liTransicion {
-    display: inline-block;
-    background-color: #ffffff;
-    text-transform: uppercase;
-  }
-  
-  /* MEDIA QUERY */
-  
-  @media (max-width: 768px) {
-    .gridPadre {
-      display: grid;
-      grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer";
-    }
-  }

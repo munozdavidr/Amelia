@@ -1,0 +1,119 @@
+body {
+  display: grid;
+  font-family: "Lato", sans-serif;
+  background-color: white;
+//   font-size: $tam-fuente;
+}
+
+h1 {
+  color: #56f616;
+//   font-size: $tam-fuente + 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.divEdit {
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .cow {
+    width: 100%;
+    height: auto;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: nav;
+}
+
+/* <li> */
+
+li {
+  list-style-type: none;
+  margin: 0 0 5px 0;
+  display: inline;
+}
+
+p {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.imgClass {
+  margin: 20px;
+  width: 350px;
+  height: auto;
+}
+
+.formStyle {
+  width: 50rem;
+  height: auto;
+}
+
+/* Etiquetas para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
+
+.imageSize {
+  width: 450px;
+  height: auto;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.imgSponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridPadre {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "section section"
+    "main main"
+    "footer footer";
+}
+
+.liTransicion {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.card-body {
+  background-color: black;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+}
