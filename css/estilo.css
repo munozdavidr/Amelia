@@ -20,7 +20,7 @@ header {
 .navpos {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; }
+  align-items: flex-start; }
 
 .card-body {
   background-color: white;
@@ -70,6 +70,9 @@ a {
   margin-top: 2rem;
   width: 15rem;
   height: auto; }
+
+.btn {
+  margin: 1px; }
 
 /* Etiquetas para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
 .imageSize {
