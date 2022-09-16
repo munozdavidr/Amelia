@@ -9,19 +9,18 @@ header {
   top: 0;
   grid-area: header; }
   header h1 {
+    display: flex;
+    align-items: flex-start;
     color: #56f616;
     font-size: 4rem;
     text-align: center;
     margin-left: 1rem;
     padding: 10px; }
-  header .header1 {
-    display: flex;
-    align-content: space-between; }
 
-nav {
+.navpos {
   display: flex;
-  justify-content: end;
-  grid-area: nav; }
+  flex-direction: column;
+  align-items: flex-end; }
 
 .card-body {
   background-color: white;
@@ -32,7 +31,6 @@ nav {
   margin-left: 55rem; }
 
 body {
-  display: grid;
   font-family: "Lato", sans-serif;
   background-color: white;
   font-size: 1rem; }
@@ -40,16 +38,14 @@ body {
 .divEdit {
   text-align: center; }
 
-main {
-  grid-area: main; }
-  main h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px; }
-  main .cow {
-    width: 100%;
-    height: auto; }
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.cow {
+  width: 100%;
+  height: auto; }
 
 /* <li> */
 li {
@@ -65,12 +61,14 @@ a {
   margin: 10px; }
 
 .imgClass {
-  margin: 20px;
-  width: 350px;
+  margin: 2rem;
+  width: 20rem;
   height: auto; }
 
 .formStyle {
-  width: 50rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  width: 15rem;
   height: auto; }
 
 /* Etiquetas para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
@@ -87,19 +85,9 @@ img {
   align-items: center;
   justify-content: center; }
 
-.gridPadre {
-  display: grid;
-  grid-template-areas: "header header" "nav nav" "section section" "main main" "footer footer"; }
-
 .liTransicion {
   display: inline-block;
   text-transform: uppercase; }
-
-/* MEDIA QUERY */
-@media (max-width: 768px) {
-  .gridPadre {
-    display: grid;
-    grid-template-areas: "header" "nav" "main" "footer"; } }
 
 footer {
   display: flex;

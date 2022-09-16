@@ -4,25 +4,21 @@ header {
     grid-area: header;
 
     h1 {
+      display: flex;
+      align-items: flex-start;
         color: #56f616;
         font-size: $tam-fuente + 3rem;
         text-align: center;
         margin-left: 1rem;
         padding: 10px;
       }
-
-    .header1 {
-        display: flex;
-        align-content: space-between;
-    }
 }
 
-
-
-nav {
-    display: flex;
-    justify-content: end;
-  grid-area: nav;
+.navpos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  // margin-right: 5rem;
 }
 
 .card-body {

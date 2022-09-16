@@ -1,5 +1,4 @@
 body {
-  display: grid;
   font-family: "Lato", sans-serif;
   background-color: white;
   font-size: $tam-fuente;
@@ -11,21 +10,17 @@ body {
   text-align: center;
 }
 
-main {
-  grid-area: main;
-
   h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    // margin: 10px;
   }
 
   .cow {
     width: 100%;
     height: auto;
   }
-}
 
 /* <li> */
 
@@ -45,15 +40,20 @@ a {
 }
 
 .imgClass {
-  margin: 20px;
-  width: 350px;
+  margin: 2rem;
+  width: 20rem;
   height: auto;
 }
 
 .formStyle {
-  width: 50rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  width: 15rem;
   height: auto;
 }
+
+
+
 
 /* Etiquetas para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
 
@@ -73,30 +73,7 @@ img {
   justify-content: center;
 }
 
-.gridPadre {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "section section"
-    "main main"
-    "footer footer";
-}
-
 .liTransicion {
   display: inline-block;
   text-transform: uppercase;
-}
-
-/* MEDIA QUERY */
-
-@media (max-width: 768px) {
-  .gridPadre {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
-  }
 }
