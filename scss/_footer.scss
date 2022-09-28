@@ -3,15 +3,14 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     background-color: none;
-    margin: 0;
-    margin-top: 20%;
-    padding: 20px;
+    // margin: 1rem;
+    padding: 15px;
     grid-area: footer;
 
 
     .iconosRs {
-        height: 120px;
-        width: 120px;
+        height: 100px;
+        width: 100px;
         margin: 2px;
         animation-duration: 3s;
     }

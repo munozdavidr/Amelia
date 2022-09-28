@@ -58,21 +58,13 @@ h2 {
 /* <li> */
 li {
   list-style-type: none;
-  margin: 0 0 5px 0;
   display: inline; }
 
 p {
   margin: 10px; }
 
-.pShop {
-  display: flex;
-  justify-content: center;
-  font-size: 3rem;
-  font-style: italic; }
-
 a {
-  text-decoration: none;
-  margin: 10px; }
+  text-decoration: none; }
 
 .imgClass {
   margin: 2rem;
@@ -88,11 +80,8 @@ a {
 .btn {
   margin: 1px; }
 
-/* Etiquetas para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
-.imageSize {
-  width: 20rem;
-  height: auto;
-  margin-top: 0.2rem; }
+.gMaps {
+  margin: 0.25rem; }
 
 img {
   border-radius: 4px; }
@@ -107,6 +96,11 @@ img {
   display: inline-block;
   text-transform: uppercase; }
 
+.imageSize {
+  width: 20rem;
+  height: auto;
+  margin-top: 0.2rem; }
+
 .boxShopMain {
   display: flex;
   justify-content: center; }
@@ -115,7 +109,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 36rem;
+  height: 33rem;
   width: auto;
   border: 0.02rem gray solid;
   margin: 0.5rem;
@@ -128,27 +122,32 @@ img {
     font-size: 1.2rem;
     font-weight: bold; }
   .boxShop .buttonShop {
-    display: inline-block;
-    justify-content: center;
+    background-color: black;
+    color: white;
     width: 60px;
     height: 30px;
     size: 2px;
     margin: 0.2rem;
     padding: 0.25rem;
-    font-size: 40%; }
+    font-size: 50%;
+    border-radius: 1rem; }
+
+.pShop {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-style: italic; }
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: none;
-  margin: 0;
-  margin-top: 20%;
-  padding: 20px;
+  padding: 15px;
   grid-area: footer; }
   footer .iconosRs {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     margin: 2px;
     animation-duration: 3s; }
 
