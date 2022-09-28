@@ -1,26 +1,28 @@
-body {
-  font-family: "Lato", sans-serif;
-  background-color: white;
-  font-size: $tam-fuente;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
+body {
+  font-family: "Lato", sans-serif;
+  // background-color: white;
+  font-size: $tam-fuente;
+}
 
 .divEdit {
   text-align: center;
 }
 
-  h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // margin: 10px;
-  }
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .cow {
-    width: 100%;
-    height: auto;
-  }
+.cow {
+  width: 100%;
+  height: auto;
+}
 
 /* <li> */
 
@@ -32,6 +34,13 @@ li {
 
 p {
   margin: 10px;
+}
+
+.pShop {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-style: italic;
 }
 
 a {
@@ -56,12 +65,12 @@ a {
   margin: 1px;
 }
 
-
 /* Etiquetas para el DIV de cada articulo en la tienda, aun no funcional, pero lo comienzo para no olvidarme, por ahora solo centra la imagen */
 
 .imageSize {
-  width: 450px;
+  width: 20rem;
   height: auto;
+  margin-top: 0.2rem;
 }
 
 img {
@@ -78,4 +87,41 @@ img {
 .liTransicion {
   display: inline-block;
   text-transform: uppercase;
+}
+
+.boxShopMain {
+  display: flex;
+  justify-content: center;
+}
+
+.boxShop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 36rem;
+  width: auto;
+  border: 0.02rem gray solid;
+  margin: 0.5rem;
+  border-radius: 1%;
+
+  h2 {
+    display: flex;
+    align-self: flex-start;
+    margin: 0.25rem 0.25rem 0.25rem 0rem;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .buttonShop {
+    // display: flex;
+    display: inline-block;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    size: 2px;
+    margin: 0.2rem;
+    padding: 0.25rem;
+    font-size: 40%;
+  }
 }
