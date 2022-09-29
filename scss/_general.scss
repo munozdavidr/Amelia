@@ -8,10 +8,6 @@ body {
   font-size: $tam-fuente;
 }
 
-.divEdit {
-  text-align: center;
-}
-
 h2 {
   display: flex;
   align-items: center;
@@ -30,12 +26,6 @@ li {
   display: inline;
 }
 
-p {
-  margin: 10px;
-}
-
-
-
 a {
   text-decoration: none;
 }
@@ -46,25 +36,34 @@ a {
   height: auto;
 }
 
+img {
+  border-radius: 4px;
+}
+
 // SECCION CONTACTO
 
+section {
+  display: inline;
+}
+
 .formStyle {
-  margin-left: 5rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.25rem 0.25rem 0.1rem 1rem;
   width: 15rem;
   height: auto;
 }
 
-.btn {
-  margin: 1px;
+.bton {
+  margin: 0.25rem 0.25rem 0.1rem 1rem;
+  padding: 0.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
 }
 
 .gMaps {
   margin: 0.25rem;
-}
-
-img {
-  border-radius: 4px;
 }
 
 .imgSponsors {
@@ -77,6 +76,12 @@ img {
 .liTransicion {
   display: inline-block;
   text-transform: uppercase;
+}
+
+.msgbox {
+  margin: 0.25rem 0.25rem 0.1rem 1rem;
+  width: 20rem;
+  height: 12rem;
 }
 
 // SECCION SHOP
@@ -129,4 +134,43 @@ img {
   justify-content: center;
   font-size: 3rem;
   font-style: italic;
+}
+
+// SECCION MULTIMEDIA
+
+.bntbg {
+  background-color: black;
+  color: white;
+}
+
+.videofts {
+  width: 1000px;
+  height: 500px;
+  resize: both;
+  position: relative;
+  z-index: 8;
+  margin: 1rem;
+  background-color: black;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.iconosRs {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100px;
+  position:fixed;
+  bottom:100px;
+  right:0.2rem;
+  background-color:none;
+  font-size:30px;
+  z-index:100;
+  animation-duration: 3s;
 }

@@ -1,17 +1,7 @@
 footer {
+    background-color: lightgrey;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: none;
-    // margin: 1rem;
-    padding: 15px;
+    flex-direction: column;
     grid-area: footer;
-
-
-    .iconosRs {
-        height: 100px;
-        width: 100px;
-        margin: 2px;
-        animation-duration: 3s;
-    }
+    text-align: center;
 }
