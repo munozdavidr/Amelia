@@ -23,7 +23,7 @@ h2 {
 
 li {
   list-style-type: none;
-  display: inline;
+  // display: inline;
 }
 
 a {
@@ -47,14 +47,25 @@ section {
 }
 
 .formStyle {
-  display: flex;
-  flex-direction: column;
+  margin: 0.25rem 0.25rem 0.1rem 1rem;
+  width: 15rem;
+  height: auto;
+}
+
+.formStyle1 {
+  margin: 0.25rem 0.25rem 0.1rem 1rem;
+  width: 15rem;
+  height: auto;
+}
+
+.formStyle2 {
   margin: 0.25rem 0.25rem 0.1rem 1rem;
   width: 15rem;
   height: auto;
 }
 
 .bton {
+  display: block;
   margin: 0.25rem 0.25rem 0.1rem 1rem;
   padding: 0.2rem;
   background-color: black;
@@ -81,7 +92,13 @@ section {
 .msgbox {
   margin: 0.25rem 0.25rem 0.1rem 1rem;
   width: 20rem;
-  height: 12rem;
+  height: 8rem;
+}
+
+.que {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 // SECCION SHOP
@@ -161,16 +178,40 @@ iframe {
   border: none;
 }
 
-.iconosRs {
+// SECCION REDES SOCIALES
+
+.iconosRs1 {
   display: flex;
   flex-direction: row;
-  height: 100px;
-  width: 100px;
-  position:fixed;
-  bottom:100px;
-  right:0.2rem;
-  background-color:none;
-  font-size:30px;
-  z-index:100;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  bottom: 350px;
+  right: 0.2rem;
+  background-color: transparent;
+  animation-duration: 3s;
+}
+
+.iconosRs2 {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  bottom: 250px;
+  right: 0.2rem;
+  background-color: transparent;
+  animation-duration: 3s;
+}
+
+.iconosRs3 {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  bottom: 150px;
+  right: 0.2rem;
+  background-color: transparent;
   animation-duration: 3s;
 }
